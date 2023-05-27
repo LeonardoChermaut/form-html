@@ -1,0 +1,147 @@
+/* ----- Font import ----- */
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&display=swap");
+
+/* ---------------------------- Reset ---------------------------- */
+/* Box sizing and font smoothing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset margin, padding, and font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Blinker, sans-serif;
+}
+
+/* Set height, line-height, scroll behavior, and background color for html and body */
+html,
+body {
+    height: 100%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    background-color: #f0ece7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ----- Medias ----- */
+/* Set max-width and center alignment for media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ----- Functionalities ----- */
+/* Inherit font styles for form elements */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ----- Texts ----- */
+/* Set word wrapping for text elements */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* ----- Root ----- */
+/* Isolate the root element */
+::root {
+    isolation: isolate;
+}
+
+/* Reset margin and padding for html and body */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set display and alignment for sections */
+section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* ----- Form Container ----- */
+.form-container {
+    margin: 5% 0;
+    width: 50%;
+    padding: 1.25rem;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.24);
+    border-radius: 0.313rem;
+}
+
+/* ----- Form Inputs ----- */
+input,
+select {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border: 0.063rem solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+/* ----- Submit Button ----- */
+input[type="submit"] {
+    width: 100%;
+    background-color: #45a049;
+    color: white;
+    padding: 0.875rem 1.25rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    /* Add gradient and box shadow on hover */
+    background: linear-gradient(90deg, rgb(42, 204, 45) 0%, rgb(42, 204, 45) 100%);
+    box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Title ----- */
+.title {
+    color: #343434;
+    text-align: center;
+    margin: 1rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+/* ----- Media Queries ----- */
+@media screen and (max-width: 768px) {
+    /* Adjust form container width for smaller screens */
+    .form-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Further adjust form container width for even smaller screens */
+    .form-container {
+        width: 90%;
+    }
+}
