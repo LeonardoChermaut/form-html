@@ -69,7 +69,7 @@ const handleSubmit = (e) => {
 
 const initializeApp = () => {
 
-  const addInputEventListeners = (...inputs) => {
+  const addInputEventListeners = (inputs) => {
     inputs.forEach((input) => {
       input.addEventListener("input", function (e) {
         const letters = e.target.value.replace(TEXT_PATHERN, "");
